@@ -49,6 +49,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const session = require('express-session');
 const router = require('./routes/routes');
+const path = require('path');
 
 const app = express();
 const PORT = process.env.PORT || 4000;
@@ -81,7 +82,8 @@ app.use((req, res, next) => {
 });
 
 //add this to view the images on the index.ejs
-app.use(express.static('public'));
+// app.use(express.static('public'));
+app.use(express.static(path.join(__dirname, './public')));
 
 //set the template engine which is EJS
 app.set('view engine', 'ejs');

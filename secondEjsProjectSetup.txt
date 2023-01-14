@@ -355,13 +355,16 @@ app.use(express.static('uploads'));
 - click on Approve and install
 - your app deploy successful
 - Environment Variables 
-* click on enfironment variables console
-* add your mongodb atlas url 
+* click on variables 
+* add your mongodb atlas url onto Key-Value Editor
+* add your PORT onto key-value Editor
 * delete every other enviroment variable that is setup by you.
 * click on Save
 - click Deployments 
 * click on Re-deloy icon
-https://itchy-worm-leather-jacket.cyclic.app
+- click on cyclic logo
+- click on your generated url or Open icon to view your app on the browser
+https://kind-gray-turtle-sock.cyclic.app
 
 
 
